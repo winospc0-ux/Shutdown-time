@@ -1,39 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>عد.تنازلي للدوام في الجامعة</title>
+  <meta name="theme-color" content="#090b0a" />
+  <title>موعد الدوام | العد التنازلي</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>العد. التنازلي للدوام</h1>
-    <p class="subtitle">في جامعات — اليوم ٢١ من هذا الشهر</p>
-    <div class="countdown">
-      <div class="time-box">
-        <span class="time" id="days">00</span>
-        <span class="label">يوم</span>
+  <main class="shell">
+    <section class="card" aria-labelledby="page-title">
+      <div class="topline">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>عداد هذا الشهر</span>
       </div>
-      <div class="time-box">
-        <span class="time" id="hours">00</span>
-        <span class="label">ساعة</span>
+
+      <header class="hero">
+        <p class="eyebrow">الجامعة / الموعد القادم</p>
+        <h1 id="page-title">العد التنازلي للدوام</h1>
+        <p class="description">الوقت المتبقي حتى بداية دوام يوم 21 من هذا الشهر.</p>
+      </header>
+
+      <div class="date-chip" id="target-date" aria-live="polite">21 — هذا الشهر</div>
+
+      <section class="countdown" aria-label="الوقت المتبقي">
+        <div class="time-card">
+          <strong class="time" id="days">00</strong>
+          <span class="label">يوم</span>
+        </div>
+        <div class="time-card">
+          <strong class="time" id="hours">00</strong>
+          <span class="label">ساعة</span>
+        </div>
+        <div class="time-card">
+          <strong class="time" id="minutes">00</strong>
+          <span class="label">دقيقة</span>
+        </div>
+        <div class="time-card">
+          <strong class="time" id="seconds">00</strong>
+          <span class="label">ثانية</span>
+        </div>
+        <div class="time-card milliseconds-card">
+          <strong class="time" id="milliseconds">000</strong>
+          <span class="label">ملي ثانية</span>
+        </div>
+      </section>
+
+      <div class="progress-track" aria-hidden="true">
+        <span id="progress"></span>
       </div>
-      <div class="time-box">
-        <span class="time" id="minutes">00</span>
-        <span class="label">دقيقة</span>
-      </div>
-      <div class="time-box">
-        <span class="time" id="seconds">00</span>
-        <span class="label">ثانية</span>
-      </div>
-      <div class="time-box milliseconds-box">
-        <span class="time" id="milliseconds">000</span>
-        <span class="label">ملي ثانية</span>
-      </div>
-    </div>
-    <p class="target-info" id="target-date"></p>
-  </div>
+      <p class="footer-note">يتحدث العداد تلقائياً — لا ينتقل إلى الشهر القادم</p>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
