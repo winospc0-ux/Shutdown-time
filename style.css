@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", "Tahoma", "Cairo", sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #b7b7d9;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1.4rem 1rem;
+  min-width: 90px;
+}
+
+.time {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #b7b7d9;
+}
+
+.target-info {
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  color: #c9caff;
+}
+
+@media (max-width: 520px) {
+  h1 { font-size: 1.7rem; }
+  .countdown { gap: 0.6rem; }
+  .time-box { min-width: 70px; padding: 1rem 0.5rem; }
+  .time { font-size: 1.8rem; }
+  .milliseconds-box { min-width: 100px; }
+}
